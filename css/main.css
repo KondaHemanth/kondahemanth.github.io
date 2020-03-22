@@ -16,6 +16,7 @@ a {
   .hero nav.desk {
     display: none; }
   .hero h1#back {
+    display: none;
     font-family: Londrina Sketch;
     color: white;
     position: absolute;
