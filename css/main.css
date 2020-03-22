@@ -69,7 +69,7 @@ nav.mobile {
   margin: 0;
   position: fixed;
   bottom: 0;
-  width: 100%; }
+  width: 99%; }
   nav.mobile a {
     color: white;
     text-transform: uppercase;
