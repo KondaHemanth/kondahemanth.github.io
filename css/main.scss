@@ -23,7 +23,7 @@ a {
   }
 
   h1#back {
-    display: none;
+    //display: none;
     font-family: Londrina Sketch;
     color: white;
     position: absolute;
@@ -31,6 +31,7 @@ a {
     opacity: 0.1;
     font-size: 7rem;
     text-align: left;
+    width: 100%;
     z-index: 1;
     margin: 0 0 0 -.3em;
   }
@@ -107,7 +108,7 @@ nav.mobile {
   margin: 0;
   position: fixed;
   bottom: 0;
-  width: 99%;
+  width: 100%;
 
   a {
     color: white;
