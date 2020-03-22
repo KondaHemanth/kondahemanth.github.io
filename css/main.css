@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Doppio+One|Londrina+Sketch&display=swap");
+body {
+  margin: 0;
+  text-align: center;
+  font-family: doppio one;
+  font-weight: 400; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.hero {
+  background-color: #202833;
+  display: flex;
+  flex-flow: column; }
+  .hero nav.desk {
+    display: none; }
+  .hero h1#back {
+    font-family: Londrina Sketch;
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    opacity: 0.1;
+    font-size: 8em;
+    text-align: left;
+    z-index: 1;
+    margin: 0 0 0 -.3em; }
+  .hero .header {
+    margin: 3em 0 0 0;
+    z-index: 2; }
+    .hero .header .left {
+      z-index: 3;
+      position: relative;
+      top: -2em; }
+      .hero .header .left h1 {
+        color: white;
+        font-family: Doppio one;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        margin: 0; }
+      .hero .header .left p {
+        display: none; }
+      .hero .header .left .buttons {
+        display: none; }
+    .hero .header .right {
+      text-align: center; }
+
+.articles {
+  padding: 2em; }
+  .articles .about {
+    margin: 2em 0; }
+    .articles .about h1 {
+      margin-bottom: .3em; }
+  .articles .article {
+    margin: 4em 0; }
+    .articles .article img {
+      width: 100%; }
+    .articles .article h2 {
+      margin-top: 0;
+      text-transform: uppercase;
+      font-family: doppio one;
+      font-size: 2em;
+      letter-spacing: .03em; }
+    .articles .article p {
+      display: none; }
+
+nav.mobile {
+  background-color: #202833;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  nav.mobile a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3em; }
+  nav.mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    nav.mobile ul li {
+      list-style-type: none; }
+
+/*# sourceMappingURL=main.css.map */
