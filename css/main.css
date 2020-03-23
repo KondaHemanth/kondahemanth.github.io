@@ -73,7 +73,8 @@ nav.mobile {
   position: fixed;
   bottom: 0;
   width: 100%;
-  box-shadow: 4px 0 10px #000000; }
+  box-shadow: 4px 0 10px #000000;
+  z-index: 10; }
   nav.mobile a {
     color: white;
     text-transform: uppercase;
