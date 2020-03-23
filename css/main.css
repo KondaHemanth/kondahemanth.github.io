@@ -72,7 +72,8 @@ nav.mobile {
   margin: 0;
   position: fixed;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 4px 0 10px #000000; }
   nav.mobile a {
     color: white;
     text-transform: uppercase;
@@ -82,6 +83,12 @@ nav.mobile {
     justify-content: space-around;
     align-items: center; }
     nav.mobile ul li {
-      list-style-type: none; }
+      list-style-type: none;
+      height: 100%; }
+      nav.mobile ul li i {
+        color: white;
+        margin-right: .3em; }
+      nav.mobile ul li span {
+        font-size: .7em; }
 
 /*# sourceMappingURL=main.css.map */

@@ -113,6 +113,7 @@ nav.mobile {
   position: fixed;
   bottom: 0;
   width: 100%;
+  box-shadow: 4px 0 10px #000000;
 
   a {
     color: white;
@@ -127,6 +128,17 @@ nav.mobile {
 
     li {
       list-style-type: none;
+      height: 100%;
+
+      i{
+        color: white;
+        margin-right: .3em;
+      }
+
+      span {
+        font-size: .7em;
+      }
+
     }
 
   }
