@@ -92,4 +92,11 @@ nav.mobile {
       nav.mobile ul li span {
         font-size: .7em; }
 
+@media (min-width: 730px) {
+  .articles {
+    padding: 2em 4em 4em 4em; }
+    .articles .article {
+      box-shadow: 0 0 10px grey;
+      padding-bottom: 1em; } }
+
 /*# sourceMappingURL=main.css.map */

@@ -145,3 +145,16 @@ nav.mobile {
   }
 
 }
+
+@media(min-width: 730px) {
+  .articles {
+    padding: 2em 4em 4em 4em;
+
+    .article {
+      box-shadow: 0 0 10px grey;
+      padding-bottom: 1em;
+    }
+
+  }
+
+}
