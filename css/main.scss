@@ -42,15 +42,19 @@ a {
 
     .left {
       z-index: 3;
-      position: relative;
-      top: -2em;
+      position: absolute;
+      top: 22em;
+      width: 100%;
+
 
       h1 {
         color: white;
+        //top: 50%;
         font-family: Doppio one;
         text-transform: uppercase;
         font-size: 2.5em;
         margin: 0;
+        text-align: center;
       }
 
       p {

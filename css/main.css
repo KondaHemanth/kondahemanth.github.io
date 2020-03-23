@@ -31,14 +31,16 @@ a {
     z-index: 2; }
     .hero .header .left {
       z-index: 3;
-      position: relative;
-      top: -2em; }
+      position: absolute;
+      top: 22em;
+      width: 100%; }
       .hero .header .left h1 {
         color: white;
         font-family: Doppio one;
         text-transform: uppercase;
         font-size: 2.5em;
-        margin: 0; }
+        margin: 0;
+        text-align: center; }
       .hero .header .left p {
         display: none; }
       .hero .header .left .buttons {
