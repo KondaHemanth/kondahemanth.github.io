@@ -4,7 +4,8 @@ body {
   padding: 0;
   text-align: center;
   font-family: doppio one;
-  font-weight: 400; }
+  font-weight: 400;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
@@ -72,6 +73,7 @@ nav.mobile {
   background-color: #202833;
   margin: 0;
   position: fixed;
+  padding: 0;
   bottom: 0;
   width: 100%;
   box-shadow: 4px 0 10px #000000;
@@ -106,7 +108,7 @@ nav.mobile {
     overflow-x: hidden; }
 
   .hero {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%; }
     .hero h1#back {
       font-family: Londrina Sketch;
@@ -207,6 +209,31 @@ nav.mobile {
           height: 50em; }
 
   nav.mobile {
-    display: none; } }
+    display: none; }
+
+  .articles {
+    text-align: left; }
+    .articles .about {
+      display: none; }
+    .articles .article {
+      box-shadow: none;
+      margin: 2em;
+      padding: 0;
+      position: inherit;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-areas: "content-image content-text"; }
+      .articles .article:hover {
+        color: #40A29F; }
+      .articles .article img {
+        grid-area: content-image;
+        height: auto; }
+      .articles .article .text {
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+        grid-area: content-text; }
+        .articles .article .text p {
+          display: inline; } }
 
 /*# sourceMappingURL=main.css.map */
