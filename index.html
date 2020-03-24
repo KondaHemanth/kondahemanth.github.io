@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/b17e492655.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
   <title>Konda Hemanth</title>
 </head>
@@ -68,7 +71,7 @@
     </div>
 
     <a href="#">
-      <div class="article">
+      <div class="article" data-aos="zoom-out" data-aos-anchor-placement="bottom-bottom">
           <img src="img/bridge.jpg" alt="">
           <div class="text">
             <h2>Designing a Website</h2>
@@ -78,7 +81,7 @@
     </a>
 
     <a href="#">
-      <div class="article">
+      <div class="article" data-aos="zoom-out">
           <img src="img/web_test.jpg" alt="">
           <div class="text">
             <h2>Productivity</h2>
@@ -96,6 +99,10 @@
       <a href="#"><li class="navlink"><i class="fas fa-mail-bulk"></i><span>Contact</span></li></a>
     </ul>
   </nav>
+
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>

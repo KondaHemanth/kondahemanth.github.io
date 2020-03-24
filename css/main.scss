@@ -173,6 +173,8 @@ nav.mobile {
     min-height: 100vh;
     width: 100%;
 
+
+
     h1#back {
       font-family: Londrina Sketch;
       text-transform: uppercase;
@@ -262,6 +264,10 @@ nav.mobile {
         text-align: left;
         position: inherit;
 
+        .wrapper {
+          animation: leftFade 1.5s forwards;
+        }
+
         h1 {
           font-size: 4em;
           margin: 0;
@@ -327,6 +333,7 @@ nav.mobile {
         img {
           width: auto;
           height: 50em;
+          animation: topDraw 1.5s forwards;
         }
       }
     }
@@ -380,4 +387,28 @@ nav.mobile {
 
   }
 
+}
+
+@keyframes leftFade{
+  from {
+    opacity: 0;
+    transform: translateX(-3em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes topDraw {
+  from{
+    opacity: 0;
+    transform: translateY(-5em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -164,6 +164,8 @@ nav.mobile {
         justify-content: flex-start;
         text-align: left;
         position: inherit; }
+        .hero .header .left .wrapper {
+          animation: leftFade 1.5s forwards; }
         .hero .header .left h1 {
           font-size: 4em;
           margin: 0;
@@ -206,7 +208,8 @@ nav.mobile {
         text-align: right; }
         .hero .header .right img {
           width: auto;
-          height: 50em; }
+          height: 50em;
+          animation: topDraw 1.5s forwards; }
 
   nav.mobile {
     display: none; }
@@ -235,5 +238,19 @@ nav.mobile {
         grid-area: content-text; }
         .articles .article .text p {
           display: inline; } }
+@keyframes leftFade {
+  from {
+    opacity: 0;
+    transform: translateX(-3em); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes topDraw {
+  from {
+    opacity: 0;
+    transform: translateY(-5em); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=main.css.map */
