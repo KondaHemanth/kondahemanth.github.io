@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Doppio+One|Londrina+Sketch&display=swap");
 body {
   margin: 0;
+  padding: 0;
   text-align: center;
   font-family: doppio one;
   font-weight: 400; }
@@ -27,7 +28,7 @@ a {
     z-index: 1;
     margin: 0 0 0 -.3em; }
   .hero .header {
-    margin: 3em 0 0 0;
+    padding: 3em 0 0 0;
     z-index: 2; }
     .hero .header .left {
       z-index: 3;
@@ -42,7 +43,7 @@ a {
         margin: 0;
         text-align: center; }
       .hero .header .left p {
-        display: none; }
+        visibility: hidden; }
       .hero .header .left .buttons {
         display: none; }
     .hero .header .right {
@@ -98,5 +99,114 @@ nav.mobile {
     .articles .article {
       box-shadow: 0 0 10px grey;
       padding-bottom: 1em; } }
+@media (min-width: 930px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; }
+
+  .hero {
+    height: 100vh;
+    width: 100%; }
+    .hero h1#back {
+      font-family: Londrina Sketch;
+      text-transform: uppercase;
+      font-size: 18rem;
+      margin: 0;
+      position: absolute;
+      left: -2rem;
+      top: 2.1em;
+      z-index: 2;
+      opacity: 0.04;
+      overflow: hidden; }
+    .hero nav.desk {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .hero nav.desk .left ul {
+        display: flex; }
+        .hero nav.desk .left ul a {
+          color: white;
+          font-family: doppio one;
+          text-transform: uppercase;
+          font-size: 1.4em; }
+          .hero nav.desk .left ul a li {
+            list-style: none;
+            display: inline-flex;
+            padding: 1em; }
+      .hero nav.desk .right ul {
+        display: flex; }
+        .hero nav.desk .right ul a {
+          color: white;
+          font-family: doppio one;
+          text-transform: uppercase;
+          font-size: 1.4em; }
+          .hero nav.desk .right ul a li {
+            list-style: none;
+            display: inline-flex;
+            padding: 1em; }
+            .hero nav.desk .right ul a li img {
+              width: 1.8em;
+              height: auto; }
+    .hero .header {
+      padding: 0 10em 0 10em;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "left left right";
+      font-family: Doppio one; }
+      .hero .header .left {
+        grid-area: left;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        position: inherit; }
+        .hero .header .left h1 {
+          font-size: 4em;
+          margin: 0;
+          text-transform: uppercase;
+          font-weight: 400;
+          text-align: left; }
+        .hero .header .left p {
+          visibility: visible;
+          font-size: 1.3rem;
+          color: white; }
+        .hero .header .left button:hover {
+          box-shadow: 0px 0px 20px #66FCF1; }
+        .hero .header .left .buttons {
+          display: flex; }
+        .hero .header .left button#about {
+          background: #66FCF1;
+          border: none;
+          border-radius: 17px;
+          width: 222px;
+          height: 59px; }
+          .hero .header .left button#about h3 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.5em; }
+        .hero .header .left button#contact {
+          border: 5px solid #46A29F;
+          box-sizing: border-box;
+          border-radius: 17px;
+          width: 225px;
+          height: 62px;
+          background-color: rgba(70, 162, 159, 0);
+          margin-left: 1.5em; }
+          .hero .header .left button#contact h3 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.3em;
+            align-self: center; }
+      .hero .header .right {
+        grid-area: right;
+        text-align: right; }
+        .hero .header .right img {
+          width: auto;
+          height: 50em; }
+
+  nav.mobile {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
