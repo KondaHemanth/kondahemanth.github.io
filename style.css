@@ -1465,6 +1465,7 @@ body.dark-mode .role-tag {
     right: 0;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1rem;
     margin-bottom: 20px;
     width: 100%;
   }
