@@ -1431,12 +1431,11 @@ body.dark-mode .role-tag {
   font-size: 0.75rem;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN Breakpoints
-   ========================================================================== */
+/** Media Checkpoints */
 @media (max-width: 1024px) {
   .hero-container {
-    grid-template-columns: 1fr;
+    display: unset;
+    /* grid-template-columns: 1fr; */
     gap: 60px;
     text-align: center;
   }
@@ -1452,6 +1451,7 @@ body.dark-mode .role-tag {
   .hero-right {
     height: auto;
     padding: 40px 0;
+    margin: 0 0.2rem;
   }
 
   .interactive-graphic-container {
@@ -1577,8 +1577,8 @@ body.dark-mode .role-tag {
   }
 
   .interactive-graphic-container {
-    width: 300px;
-    height: 300px;
+    width: 80vw;
+    height: 80vw;
   }
 
   .browser-mockup {
