@@ -1271,7 +1271,83 @@ body.dark-mode .role-tag {
   font-size: 1.1rem;
   color: var(--text-muted);
   margin-top: -35px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
+}
+
+.resume-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    border-color var(--transition-normal),
+    background-color var(--transition-normal);
+}
+
+.resume-card-header {
+  padding: 50px 60px 0;
+}
+
+.resume-card-body {
+  padding: 40px 60px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.resume-file-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.resume-file-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-orange);
+  flex-shrink: 0;
+  transition:
+    border-color var(--transition-normal),
+    background-color var(--transition-normal),
+    transform var(--transition-fast);
+}
+
+.resume-card:hover .resume-file-icon {
+  transform: scale(1.05);
+}
+
+.resume-file-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resume-file-name {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.resume-file-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.resume-file-sep {
+  opacity: 0.5;
 }
 
 .download-btn {
@@ -1280,22 +1356,50 @@ body.dark-mode .role-tag {
   gap: 10px;
   background-color: var(--accent-orange);
   color: white;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-size: 0.9rem;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 0.95rem;
   font-weight: 700;
+  white-space: nowrap;
   transition:
     transform var(--transition-fast),
-    background-color var(--transition-fast);
+    background-color var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .download-btn:hover {
   transform: translateY(-2px);
   background-color: #e04a29;
+  box-shadow: 0 8px 24px rgba(255, 90, 54, 0.35);
 }
 
 .download-icon {
   flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .resume-card-header {
+    padding: 30px 24px 0;
+  }
+
+  .resume-card-body {
+    padding: 24px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .resume-file-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resume-file-details {
+    align-items: center;
+  }
+
+  .download-btn {
+    justify-content: center;
+  }
 }
 
 /**Contact Section */
